@@ -20,6 +20,13 @@ const getWalletBalance = async() => {
         console.error(err)
     }
 }
+const airDropSol = async() => {
+    try {
+        const connection = new Connection(clusterApiUrl('devnet'), 'confirmed')
+    } catch (err) {
+        console.log(err)        
+    }
+}
 const main = async() => {
     await getWalletBalance()
 }
